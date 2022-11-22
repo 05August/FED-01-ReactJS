@@ -1,11 +1,13 @@
 const Answer = ({ answerOption, handleClickAnswer }) => {
   return (
-    <div
-      onClick={(e) => {
-        handleClickAnswer(answerOption.option, e);
-      }}
-    >
-      {answerOption.option}){answerOption.content}
+    <div className={answerOption.content === "" ? "hide" : ""}>
+      <div
+        onClick={(e) => {
+          handleClickAnswer(answerOption.option, e);
+        }}
+      >
+        {answerOption.option}){answerOption.content}
+      </div>
     </div>
   );
 };

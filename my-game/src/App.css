@@ -1,7 +1,8 @@
 .App {
   text-align: center;
   min-width: 1000px;
-
+  /* display: flex;
+  justify-content: center; */
 }
 
 .App-logo {
@@ -55,12 +56,18 @@ html {
   height: 50px;
   width: 400px;
   border: 2px solid;
+}
+
+.answer-container>div>div {
+  height: 51px;
+  width: 401px;
+  /* border: 2px solid; */
   cursor: pointer;
   word-break: break-word;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 10px;
+  /* padding-left: 10px; */
 }
 
 .button-submit {
@@ -80,4 +87,30 @@ html {
 
 .answer-select {
   background-color: pink;
+}
+
+.hide {
+  cursor: not-allowed !important;
+}
+
+.hide>div {
+  display: none !important;
+}
+
+.modal {
+  height: 300px;
+  width: 50%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+}
+
+.modal>h3 {
+  margin-top: 80px;
+}
+
+.modal>button {
+  margin-top: 20px;
 }
